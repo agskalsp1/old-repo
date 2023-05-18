@@ -1,0 +1,43 @@
+"\\wsl.localhost\docker-desktop-data\version-pack-data\community\docker\overlay2\81e06cd3b557b5f7daeb7f45cfdf4480b54cfaaa2943bbb08d914e8ddb99cecb\diff\var\jenkins_home"
+
+
+
+pipeline
+{
+    agent any
+        stages{
+            stage('Build'){
+               steps{
+                echo 'This is build step'
+               }
+            }
+            stage('Test'){
+               steps{
+                echo 'This is Test step'
+               }
+            }
+            stage('Deploy'){
+               steps{
+                echo 'This is Deploy step'
+               }
+            }
+        }
+}
+
+
+
+pipeline
+{
+    agent any
+        stages{
+            stage('Build'){
+               steps{
+               sh 'echo This is build step'
+               }
+             }
+          }
+}
+
+
+
+
